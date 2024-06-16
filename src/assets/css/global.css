@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html, body, #root {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgb(239, 243, 243) !important;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.hide-scrollbar {
+    height: 150px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100% !important;
+    height: 280px;
+  }
+  
+  .image {
+    position: absolute;
+    width: 100px;
+    height: auto;
+  }
+  
+  .first-image {
+    top: -70px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+  }
+  
+  .second-image {
+    top: 250px;
+    left: 100px;
+    z-index: 2; 
+    height: 80%;
+    width: 20%;
+  }
+  .third-image {
+    top: 250px;
+    right: 100px;
+    z-index: 2; 
+    height: 80%;
+    width: 30%;
+  }
+  

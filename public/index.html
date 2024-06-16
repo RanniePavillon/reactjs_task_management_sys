@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/icons/logo1.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="Streamline productivity with our advanced Task Management system. Organize, prioritize, and collaborate seamlessly on tasks to boost efficiency and achieve your goals. Try it now and experience a new level of team coordination and personal productivity." />
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/logo1.png" />
+		<link rel="manifest" crossorigin="use-credentials" href="%PUBLIC_URL%/manifest.json" />
+		<title>Task Management</title>
+
+		<script>
+			if('serviceWorker' in navigator){
+				window.addEventListener('load', () => {
+					navigator.serviceWorker.register(`%PUBLIC_URL%/sw.js`).then((reg) => console.log('sw registered')).catch((err) => console.log('sw not registered'))
+				})
+			}
+		</script>
+	</head>
+	<body>
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>		
+	</body>
+</html>
