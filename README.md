@@ -5,7 +5,7 @@ Installation
 To run this application on your local machine, proceed with the following instructions:
 
 Clone the Repository:
-Copy the repository link to begin.
+Copy the repository link to begin. (https://github.com/RanniePavillon/reactjs_task_management_sys.git)
 
 Navigate to the Project Directory:
 Open your terminal, navigate to the project directory.
