@@ -25,9 +25,7 @@ export const AuthRoute = () => {
 const Render = (Component, props) => {
     return (
         <Box display="flex" width="100%" height="100%">
-            {/* <Navigation side={1} /> */}
             <Box display="flex" flexDirection="column" width="100%" height="100%">
-                {/* <Navigation side={0} /> */}
                 <Box component="main" flex={1} sx={{overflowY: 'auto'}}>
                     <Box sx={{position: 'relative'}} width="100%" height="100%">
                         <Box width="100%" height="100%"> <Component {...props} /></Box>

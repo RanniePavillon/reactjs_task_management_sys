@@ -23,10 +23,8 @@ export const avatarstyle = (bg, w=30, h=30, radius="10%") => {
 
 export const avatarstylesx = (bg, w=30, h=30, radius="10%", size="cover", position="center center") => {
     return {
-        // border: '3px solid #fff',
         background: `url(${bg})`,
         borderRadius: radius,
-        // backgroundColor: '#fff',
         backgroundSize: size,
         backgroundPosition: position,
         backgroundRepeat: 'no-repeat',
@@ -116,19 +114,9 @@ export const tfsx = (v="tf") => {
             marginTop: -0.4,
         },
         '& .MuiOutlinedInput-root': {
-            // borderRadius: '6px',
             bgcolor: '#fff',
             height: v === 'tf' ? '45px' : 'auto',
             borderRadius: 2
-            // '& fieldset': {
-            //     borderColor: '#D7DDDF',
-            // },
-            // '&:hover fieldset': {
-            //     borderColor: '#00B451',
-            // },
-            // '&.Mui-focused fieldset': {
-            //     borderColor: '#00B451',
-            // },
         }
     }
 }

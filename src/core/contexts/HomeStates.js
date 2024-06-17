@@ -55,9 +55,7 @@ export const HomeStates = () => {
                 toggled: false,
                 list: [{value: '', stat: false, msg: '', disabled: false}]
             },
-            files: [
-                // {value: null, object: null, name: 'default_avatar', type: 'default', updated: false, size: 0, stat: false, msg: ''}
-            ]
+            files: []
         }
     })
 

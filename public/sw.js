@@ -1,5 +1,5 @@
-var staticCacheName = "pofpersonal-cache-v3.1.5";
-var dynamicCacheName = "pofpersonal-cache-dynamic-3.1.5";
+var staticCacheName = "tms-cache-v1.1.1";
+var dynamicCacheName = "tms-cache-dynamic-1.1.1";
 var filesToCache = [
     '/'
 ];
@@ -20,7 +20,7 @@ self.addEventListener('activate', event => {
         caches.keys().then(cacheNames => {
             return Promise.all(
                 cacheNames
-                    .filter(cacheName => (cacheName.startsWith('pofpersonal-cache')))
+                    .filter(cacheName => (cacheName.startsWith('tms-cache')))
                     .filter(cacheName => (cacheName !== dynamicCacheName))
                     .map(cacheName => caches.delete(cacheName))
             );

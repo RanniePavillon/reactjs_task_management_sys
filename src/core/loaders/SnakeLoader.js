@@ -17,13 +17,9 @@ export const SnakeLoader = ({ bg, size, distance, length = 3 }) => {
     const cVariants = {
         start: {
             y: '0%',
-            // opacity: 0,
-            // scale: 1
         },
         end: {
             y: [`-100%`, '0%', '0%', '0%', '0%'],
-            // opacity: 1,
-            // scale: 1.5,
         },
     }
     
@@ -48,8 +44,6 @@ export const SnakeLoader = ({ bg, size, distance, length = 3 }) => {
         for (let i = 0; i < length; i++) {
             l.push(motion.div)
         }
-
-        // console.log(l);
         return l
     }
     
